@@ -9,11 +9,16 @@ curl "${API}${URL_PATH}/${ID}" \
   --header "Content-Type: application/json" \
 --header "Authorization: Bearer ${TOKEN}" \
 --data '{
-    "recipe": {
-      "ingredient": "'"${INGREDIENT}"'",
-      "brewStep": "'"${STEP}"'",
-      "note": "'"${NOTE}"'"
-    }
-  }'
+  "recipe": {
+    "batchSize": "'"${SIZE}"'",
+    "grainBill": "'"${GRAINS}"'",
+    "hopProfile": "'"${HOPS}"'",
+    "hopSchedule": "'"${HOPADDS}"'",
+    "dryHop": "'"${DRYHOP}"'",
+    "yeast": "'"${YEAST}"'",
+    "directions": "'"${DIRECTIONS}"'",
+    "note": "'"${NOTE}"'"
+  }
+}'
 
 echo

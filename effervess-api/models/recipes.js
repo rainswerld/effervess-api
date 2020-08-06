@@ -1,11 +1,14 @@
 const mongoose = require('mongoose')
 
 const recipeSchema = new mongoose.Schema({
-  recipeName: {
+  beerName: {
     type: String,
     required: true
   },
-  ingredient: {
+  batchSize: {
+    type: String
+  },
+  grainBill: {
     type: String
   },
   // {
@@ -16,7 +19,19 @@ const recipeSchema = new mongoose.Schema({
   // default: ['']
   // },
   // update this to reflect what's in the ingredients
-  brewStep: {
+  hopProfile: {
+    type: String
+  },
+  hopSchedule: {
+    type: String
+  },
+  dryHop: {
+    type: String
+  },
+  yeast: {
+    type: String
+  },
+  directions: {
     type: String
   },
   note: {
