@@ -10,9 +10,14 @@ curl "${API}${URL_PATH}" \
   --header "Authorization: Bearer ${TOKEN}" \
   --data '{
     "recipe": {
-      "recipeName": "'"${NAME}"'",
-      "ingredient": "'"${INGREDIENT}"'",
-      "brewStep": "'"${STEP}"'",
+      "beerName": "'"${NAME}"'",
+      "batchSize": "'"${SIZE}"'",
+      "grainBill": "'"${GRAINS}"'",
+      "hopProfile": "'"${HOPS}"'",
+      "hopSchedule": "'"${HOPADDS}"'",
+      "dryHop": "'"${DRYHOP}"'",
+      "yeast": "'"${YEAST}"'",
+      "directions": "'"${DIRECTIONS}"'",
       "note": "'"${NOTE}"'"
     }
   }'
