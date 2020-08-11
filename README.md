@@ -7,7 +7,8 @@ That's where Effervess comes in to help. With Effervess you can create your own 
 
 ## Important Links
 
-- [Client](https://github.com/rainswerld/effervess-client)
+- [Application Repo](https://github.com/rainswerld/effervess-client)
+- [Deployed API](https://dashboard.heroku.com/apps)
 - [My Planning & Future Steps](https://www.notion.so/Effervess-52b266de796e4fa69b9faba38bed935b)
 - [Deployed Application](https://rainswerld.github.io/effervess-client/)
 
