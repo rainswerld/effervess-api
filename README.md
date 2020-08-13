@@ -24,6 +24,25 @@ Finally, I used Notion to organize my thoughts, write some pseudo code, and try 
 
 In terms of problem solving, similar to how I broke down the big scope of the project into digestable pieces, I would break down my problems into small pieces. When a bug or error popped up, I would take a step back and understand what the error or bug was telling me. If I didn't undertand it, I would look at documentation or just look through the code to see where I might have done something with the code that would trip up the functionality. By breaking down the errors and digging into the smaller pieces, it allowed me to better understand how the code worked but also all the links in the chain that might throw an error.
 
+### Auth API
+
+| Verb   | URI Pattern        | Controller#Action |
+|:-------|:-------------------|:------------------|
+| POST   | `/sign-up`         | users#signup      |
+| POST   | `/sign-in`         | users#signin      |
+| PATCH  | `/change-password` | users#changepw    |
+| DELETE | `/sign-out`        | users#signout     |
+
+### Recipes API
+
+| Verb   | URI Pattern    | Controller#Action |
+|:-------|:---------------|:------------------|
+| GET    | `/recipes`     | recipes#index     |
+| GET    | `/recipes/:id` | recipes#show      |
+| POST   | `/recipes`     | recipes#create    |
+| PATCH  | `/recipes/:id` | recipes#update    |
+| DELETE | `/recipes/:id` | recipes#delete    |
+
 ### User Stories
 
 1. As a user, I would like to signup, signin, logout, and change my password.
